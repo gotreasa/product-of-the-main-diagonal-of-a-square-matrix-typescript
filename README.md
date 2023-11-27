@@ -12,4 +12,19 @@ Product of the main diagonal of a square matrix - TypeScript repository
 
 ## Contributing
 
-Please consult [CONTIRBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
+Please consult [CONTRIBUTING](./CONTRIBUTING.md) for guidelines on contributing to this project.
+
+## Description
+
+Given a list of rows of a square matrix, find the product of the main diagonal.
+
+Examples:
+
+```
+[[1, 0], [0, 1]] should return 1
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]] should return 45
+```
+
+http://en.wikipedia.org/wiki/Main_diagonal
+
+The main diagonal runs from the top left diagonally down. It can be present in a square matrix or rectangular.
