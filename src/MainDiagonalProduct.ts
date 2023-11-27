@@ -1,6 +1,3 @@
-export default class Dummy {
-  valid: boolean;
-  constructor() {
-    this.valid = true;
-  }
-}
+const getMainDiagonalProduct = (input: Array<Array<number>>) => 1;
+
+export default getMainDiagonalProduct;

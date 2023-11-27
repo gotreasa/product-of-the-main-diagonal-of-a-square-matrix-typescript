@@ -1,8 +1,12 @@
-import Dummy from '../../src/MainDiagonalProduct';
+import getMainDiagonalProduct from '../../src/MainDiagonalProduct';
 
-describe('Check the Dummy class is working', () => {
-  test('should have a class object valid set to true', () => {
-    const dummy = new Dummy();
-    expect(dummy.valid).toBe(true);
+describe('The product of the main diagonal', () => {
+  test('should return 1 when the matrix is [[1, 0], [0, 1]]', () => {
+    expect(
+      getMainDiagonalProduct([
+        [1, 0],
+        [0, 1],
+      ]),
+    ).toBe(1);
   });
 });
