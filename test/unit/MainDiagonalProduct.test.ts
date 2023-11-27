@@ -9,4 +9,13 @@ describe('The product of the main diagonal', () => {
       ]),
     ).toBe(1);
   });
+
+  test('should return 4 when the matrix is [[2, 0], [0, 2]]', () => {
+    expect(
+      getMainDiagonalProduct([
+        [2, 0],
+        [0, 2],
+      ]),
+    ).toBe(4);
+  });
 });
