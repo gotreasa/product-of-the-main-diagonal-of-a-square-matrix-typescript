@@ -1,4 +1,4 @@
-import Dummy from '../../src/Dummy';
+import Dummy from '../../src/MainDiagonalProduct';
 
 describe('Check the Dummy class is working', () => {
   test('should have a class object valid set to true', () => {
