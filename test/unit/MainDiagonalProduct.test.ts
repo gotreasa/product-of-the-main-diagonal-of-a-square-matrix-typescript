@@ -38,4 +38,13 @@ describe('The product of the main diagonal', () => {
       ]),
     ).toBe(135);
   });
+
+  test('should return 135 when the matrix is [[1, 2, 3], [4, 5, 6]]', () => {
+    expect(
+      getMainDiagonalProduct([
+        [1, 2, 3],
+        [4, 5, 6],
+      ]),
+    ).toBe(5);
+  });
 });
