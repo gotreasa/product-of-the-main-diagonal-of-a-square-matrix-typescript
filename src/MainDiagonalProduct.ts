@@ -1,32 +1,10 @@
-const getMainDiagonalProduct = (input: Array<Array<number>>) => {
-  if (
-    JSON.stringify(input) ===
-    JSON.stringify([
-      [2, 0],
-      [0, 2],
-    ])
-  )
-    return 4;
-  if (
-    JSON.stringify(input) ===
-    JSON.stringify([
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-    ])
-  )
-    return 45;
-  if (
-    JSON.stringify(input) ===
-    JSON.stringify([
-      [3, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9],
-    ])
-  )
-    return 135;
+const getMainDiagonalProduct = (input: Array<Array<number>>): number => {
+  let result = 1;
+  for (let i = 0; i < input.length; i += 1) {
+    result = result * input[i][i];
+  }
 
-  return 1;
+  return result;
 };
 
 export default getMainDiagonalProduct;
